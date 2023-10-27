@@ -57,7 +57,6 @@ p{
  font-size: 1em;
  font-weight: 400;
  display: flex;
-align-items: center;
 justify-content: center;
 }
 
@@ -173,6 +172,30 @@ footer {
     font-weight: 500;
 }
 
+
+.location-holder {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 20em;
+
+}
+
+
+.text-holder {
+box-sizing: border-box;
+margin: 1rem 0;
+}
+
+.text-holder p{
+    padding-left: 18em;
+    padding-right: 18em;
+}
+
+
+
+
+/* media queries start here */
 
 @media screen and (max-width: 555px) {
             nav ul {
