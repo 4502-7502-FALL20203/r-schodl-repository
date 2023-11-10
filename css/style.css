@@ -33,7 +33,7 @@ nav ul li {
 
 header {
     font-family: 'Bitter', serif;
-    font-size: 3em;
+    font-size: 3em auto;
     font-weight: 500;
     display: flex;
     align-items: center;
@@ -48,6 +48,7 @@ flex-direction: column;
 align-items: center;
 justify-content: center;
 background-color: cornflowerblue;
+opacity: 90%;
 
 }
 
@@ -60,7 +61,7 @@ justify-content: center;
 }
 
 
-main {
+/*main {
     width: 90%;
     max-width: 1200px;
     background:lightyellow ;
@@ -68,7 +69,7 @@ main {
     padding: 0.5 rem 1 rem;
     box-sizing: border-box;
     margin: 1rem auto;
-}
+} */
 
 
 ul a{
@@ -107,8 +108,8 @@ display: flex;
 
 h1 {
 font-family: 'Bitter', serif;
-    font-size: 2em;
-    font-weight: 300;
+    font-size: 2em auto;
+    font-weight: 600;
     display: flex;
     align-items: center;
     justify-content: center;
@@ -136,31 +137,7 @@ img {
     border: none;
 }
 
-.album-cover {
-    display: flex;
-    justify-content: center;
-}
 
-.album-cover img{
-    max-width: 300px;
-    border: none;
-
-}
-
-.photo-credit {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    background: cornflowerblue;
-    border-radius: 0.5em;
-    font-family: 'IBM Plex Sans', sans-serif;
-     font-size: 1em;
-     font-weight: 400;
-     display: flex;
-    align-items: center;
-    justify-content: center;
-
- }
 
 
 ul {
@@ -180,34 +157,202 @@ footer {
     font-family: 'Bitter', serif;
     font-size: 1em;
     font-weight: 500;
+
+}
+
+
+.image-holder{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+}
+
+/*Media Page*/
+
+.album-cover {
+    display: flex;
+    justify-content: center;
+}
+
+.album-cover img{
+    max-width: 300px;
+    border: none;
+
+}
+
+.section-item {
+     width: 90%;
+    max-width: 1200px;
+    background:lightyellow ;
+    border-radius: 1rem;
+    padding: 0.5 rem 1 rem;
+    box-sizing: border-box;
+    margin: 1rem auto;
+    padding: 0.5em;
+}
+
+.photo-credit {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    background: azure;
+    border-radius: 0.5em;
+    font-family: 'IBM Plex Sans', sans-serif;
+     font-size: 1em;
+     font-weight: 400;
+     flex-shrink: 2;
+ }
+
+
+
+
+/*Location Page*/
+
+
+address {
+    font-family: 'IBM Plex Sans', sans-serif;
+ font-size: 1em;
+ font-weight: 400;
+ display: flex;
+ font-style: normal;
+justify-content: center;
 }
 
 
 .location-holder {
     display: flex;
-    align-items: center;
+    flex-direction: column;
     justify-content: center;
     height: 20em;
+    width: 90%;
+    max-width: 1200px;
+    background:lightyellow;
+    border-radius: 1rem;
+    padding: 0.5 rem 1 rem;
+    box-sizing: border-box;
+    margin: 1rem auto;
+    padding: 0.5em;
 
 }
 
 
 .text-holder {
 box-sizing: border-box;
-margin: 1rem 0;
+margin: 0.75rem 0;
+}
+
+.text-holder li{
+    list-style-type: none;
 }
 
 .text-holder p{
-    padding-left: 18em;
-    padding-right: 18em;
+    padding-left: 1em;
+    padding-right: 1em;
 }
+
+#mapofbrussels{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin:1em;
+}
+
+
+#brussels {
+    color: white;
+    font-weight: 600;
+}
+
+
+/*Photo gallery css for gallery-test*/
+
+#content {
+    background:lightyellow ;
+    border-radius: 1rem;
+    box-sizing: border-box;
+    margin: 0.75rem auto;
+    padding: 1rem;
+}
+
+.gallery-image {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+}
+
+#gallery-holder{
+    width: 90%;
+}
+
+
+.button_holder {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    margin-top: 1rem;
+}
+
+button {
+  background-color: #O3A89E;
+  border: none;
+  color: #000;
+  text-align: center;
+  text-decoration: none;
+  font-weight: 600;
+  display: block;
+  cursor: pointer;
+  width: 100px;
+  padding: 0.8rem 0.5rem;
+  border-radius: 3px;
+}
+
+
+#button_previous {
+    margin: 1rem;
+}
+
+#button_next {
+    margin: 1rem;
+}
+
+.gallery-image img {
+    width: 100%;
+}
+
+.hideThis {
+    display: none;
+}
+
+body{
+    font-family: 'IBM Plex Sans', sans-serif;
+    font-size: 1em;
+    font-weight: 300;
+}
+
+
+ time{
+    font-family: 'IBM Plex Sans', sans-serif;
+    font-size: 1em;
+    font-weight: 300;
+}
+
+figcaption{
+    width: 50%;
+}
+
+
+
+
+
+
 
 
 
 
 /* media queries start here */
 
-@media screen and (max-width: 555px) {
+@media screen and (max-width: 600px) {
             nav ul {
             font-family: 'Arvo', serif;
             font-size: 1.5em;
@@ -224,7 +369,7 @@ margin: 1rem 0;
             nav {
                 max-width: 800px;
                 margin: auto;
-                font-size: 1.5em;
+                font-size: 1em;
             }
 
             nav ul li {
@@ -232,17 +377,84 @@ margin: 1rem 0;
                 list-style-type: none;
                 padding: 1rem;
                 max-width: 100%;
-            }       
-
-            body {
-                background-color: forestgreen;
+                margin-left: -1.5rem;
             }
+
+            .location-holder {
+                display: flex;
+                height: auto;
+                justify-content: center;
+                background:lightyellow ;
+                border-radius: 1rem;
+                margin: 1rem auto;
+            }
+            .text-holder p{
+                padding-left: 0.5em;
+                padding-right: 0.5em;
+                padding-bottom: 0.5em;
+            }
+
+            #content {
+                background:lightyellow ;
+                border-radius: 1rem;
+                box-sizing: border-box;
+                margin: 0.75rem auto;
+                padding: 1rem;
+            }
+            figcaption{
+                width: 100%;
+            }
+
+            .main-image{
+                width: 300px;
+            }
+
 }
 
-@media screen and (min-width: 800px){
+@media screen and (min-width: 601px){
+    nav ul li {
+                flex-flow: column;
+                list-style-type: none;
+                padding: 1rem;
+                max-width: 100%;
+                margin-left: -.5rem;
+            }
+
+
     body {
     background-color: cornflowerblue;
+    opacity: 90%;
     }
+
+    .location-holder {
+                display: flex;
+                height: auto;
+                justify-content: center;
+                background:lightyellow ;
+                border-radius: 1rem;
+                margin: 1rem auto;
+                width: 80%;
+            }
+            .text-holder p{
+                padding-left: 0.5em;
+                padding-right: 0.5em;
+                padding-bottom: 0.5em;
+            }
+            img { 
+                max-width: 500px;
+             }
+             #content {
+                background:lightyellow ;
+                border-radius: 1rem;
+                box-sizing: border-box;
+                margin: 0.75rem auto;
+                padding: 1rem;
+            }
+
+            figcaption{
+                width: 80%;
+            }
+
 }
 
 
