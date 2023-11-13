@@ -2,6 +2,25 @@ input {
   all: unset;
 }
 
+.skip-link {
+  position: absolute;
+  width: 1px;
+  height: 1px;
+  padding: 0;
+  margin: -1px;
+  overflow: hidden;
+  border: 0;
+}
+
+.skip-link:focus{
+  width: unset;
+  height: unset;
+  position: relative;
+  padding: unset;
+  margin: unset;
+  font-size: 2rem;
+}
+
 
 
 nav {
@@ -159,6 +178,16 @@ footer {
     font-weight: 500;
 
 }
+
+
+
+.material-symbols-outlined {
+                    font-variation-settings:
+                                                  'FILL' 0,
+                                                  'wght' 400,
+                                                  'GRAD' 0,
+                                                  'opsz' 24
+                                              }
 
 
 .image-holder{
