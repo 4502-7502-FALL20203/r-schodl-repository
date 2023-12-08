@@ -101,12 +101,12 @@ ul a{
 }
 
 a:link {
-    color: #b35a00;
+    color: #00b3b3;
     text-decoration: none;
 }
 
 a:visited {
-     color: #00b3b3;
+     color: #b35a00;
      text-decoration: none;
 }
 
@@ -173,6 +173,7 @@ ul {
 
 footer {
     background-color: lightcoral;
+    max-width: 800px;
     font-family: 'Bitter', serif;
     font-size: 1em;
     font-weight: 500;
